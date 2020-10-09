@@ -1,8 +1,8 @@
 .ex-1-square {
-    width: 100px;
-    height: 100px;
-    border: 1px solid red;
-    transition: background-color 3s;
+  width: 100px;
+  height: 100px;
+  border: 1px solid red;
+  transition: background-color 3s;
 }
 
 .ex-1-square:hover{
@@ -11,10 +11,10 @@
 
 
 .ex-2-square {
-    width: 100px;
-    height: 100px;
-    background: red;
-    transition: width 5s;
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 5s;
 }
 
 .ex-2-square:active{
@@ -22,10 +22,10 @@
 }
 
 .ex-3-square {
-    width: 100px;
-    height: 100px;
-    background: red;
-    transition: border-radius 7s;
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: border-radius 7s;
 }
 
 .ex-3-square:hover{
@@ -33,10 +33,10 @@
 }
 
 .ex-4-square {
-    width: 100px;
-    height: 100px;
-    background: red;
-    transition: background 5s;
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: background 5s;
 }
 
 .ex-4-square:hover{
@@ -44,11 +44,11 @@
 }
 
 .ex-5-square {
-    margin: 20px;
-    width: 60px;
-    height: 60px;
-    background: red;
-    transition: width 3s, height 3s ;
+  margin: 20px;
+  width: 60px;
+  height: 60px;
+  background: red;
+  transition: width 3s, height 3s ;
 }
 
 .ex-5-square:hover{
@@ -62,7 +62,7 @@
 }
 
 .ex-6-img {
-    width: 500px;
+  width: 500px;
 }
 
 .ex-6-img:hover{
@@ -70,8 +70,8 @@
 }
 
 .ex-7-img{
-    width: 500px;
-    transition: filter 5s;
+  width: 500px;
+  transition: filter 5s;
 }
 
 .ex-7-img:hover{
@@ -89,20 +89,36 @@
 }
 
 .ex-9-img {
-    margin: 50px 100px;
-    width: 400px;
-    transition: filter 5s, border-radius 5s, width 5s;
+  margin: 50px 100px;
+  width: 400px;
+  transition: filter 5s, border-radius 5s, width 5s;
 }
 
 .ex-9-img:hover{
   filter: contrast(20%) blur(3px);
-border-radius: 15%;
-width: 200px;
+  border-radius: 15%;
+  width: 200px;
 }
 
 .ex-10-icon {
     font-size: 60px;
+    animation-name: spin;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    animation-duration: 2s;
+    animation-timing-function: linear;
 }
+
+@keyframes spin {
+  from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+
 .ex-11-icon {
     font-size: 60px;
 }
